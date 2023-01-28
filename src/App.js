@@ -1,6 +1,7 @@
 import './App.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Register from './components/Register';
+import Register from './pages/Register';
+import Verification from './pages/Verification';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Router>
         <Routes>
           <Route path='' element={<Register/>}/>
+          <Route path='/verification' element={<Verification/>}/>
         </Routes>
       </Router>
     </div>
