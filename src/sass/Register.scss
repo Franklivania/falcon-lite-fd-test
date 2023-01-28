@@ -1,0 +1,85 @@
+@import '../App.scss';
+
+.register{
+    position: relative;
+    height: $height;
+    width: $width;
+    background: $bg-color;
+    display: flex;
+
+
+    .right{
+        position: relative;
+        width: calc(($width) * 0.6);
+        height: $height;
+        display: flex;
+        flex-direction: column;
+
+        img{
+            width: calc(($width) * 0.3);
+            align-self: center;
+        }
+
+        h1{
+            color: $bold-color;
+            font-size: $large-text;
+            padding: 0 0 0 2rem;
+            font-family: $font-one;
+            font-weight: 500;
+
+            p{
+                color: $text-color;
+                font-size: $min-text-size;
+                font-family: $font-two;
+            }
+        }
+
+        form{
+            padding: 0 2rem;
+
+            label{
+                display: flex;
+                flex-direction: column;
+                margin: 0.5rem 0;
+                font-family: $font-three;
+                font-size: $min-text-size;
+                color: rgba(($text-color), 1);
+
+                input{
+                    width: calc(($width) * 0.86);
+                    border: 0.05rem solid $main-color;
+                    background: none;
+                    outline: none;
+                    resize: none;
+                    color: rgba(($text-color), 1);
+                    padding: 0.7rem;
+                    border-radius: $small-border-radius;
+                    font-size: $text-size;
+
+                    &::placeholder{
+                        font-size: $text-size;
+                        font-family: $font-three;
+                        color: rgba(($text-color), 0.5);
+                    }
+                }
+            }
+
+        }
+    }
+
+    .left{
+        position: relative;
+        width: calc(($width) * 0.4);
+        height: $height;
+        background: $main-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            position: absolute;
+            width: calc(($width) * 1);
+            left: calc(($width) * -0.1);
+        }
+    }
+}
