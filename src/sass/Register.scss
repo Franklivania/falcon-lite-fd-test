@@ -129,8 +129,6 @@
         .left{
             width: $width;
             height: $height;
-            background: url(../assets/image.svg) center no-repeat;
-            background-size: contain;
 
             img{
                 width: calc(($width) * 0.6);
