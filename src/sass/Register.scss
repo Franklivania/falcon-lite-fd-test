@@ -89,6 +89,10 @@
                 color: $bg-color;
                 background: $main-color;
                 border-radius: $small-border-radius;
+                
+                &:hover{
+                    background: rgba(($main-color), 0.6);
+                }
             }
 
             #acc{

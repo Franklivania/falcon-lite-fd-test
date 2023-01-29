@@ -8,12 +8,94 @@
     background: $bg-color;
 
 
-    .right{
+    .left{
+        position: relative;
         width: calc(($width) * 0.6);
+        height: $height;
+        display: flex;
+        flex-direction: column;
 
+        .top{
+            position: relative;
+            width: calc(($width) * 1);
+            display: flex;
+            flex-direction: column;
+
+            img{
+                width: calc(($width) * 0.3);
+                align-self: center;
+            }
+    
+            h1{
+                color: $bold-color;
+                font-size: $large-text;
+                padding: 0 0 0 2rem;
+                font-family: $font-one;
+                font-weight: 500;
+    
+                p{
+                    color: $text-color;
+                    font-size: $min-text-size;
+                    font-family: $font-two;
+                    margin: -0.5rem 0 0 0;
+                }
+            }
+        }
+
+        form{
+            width: calc(($width) * 1);
+            height: calc(($height) * 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: center;
+
+            label{
+                height: calc(($height) * 0.4);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                input{
+                    width: calc(($width) * 0.07);
+                    height: calc(($height) * 0.1);
+                    font-size: 3rem;
+                    border: 0.1rem solid $main-color;
+                    background: none;
+                    text-align: center;
+                    outline: none;
+                    margin: 0 0.3rem;
+                    border-radius: $small-border-radius;
+                    font-family: $font-one;
+                    color: $text-color;
+                    text-transform: uppercase;
+
+                    &::placeholder{
+                        color: rgba(($text-color), 0.4);
+                    }
+                }
+            }
+
+            #proceed{
+                width: calc(($width) * 0.4);
+                padding: 0.7rem;
+                background: $main-color;
+                color: $bg-color;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                border-radius: $small-border-radius;
+                align-self: center;
+
+                &:hover{
+                    background: rgba(($main-color), 0.6);
+                }
+            }
+        }
+        
     }
 
-    .left{
+    .right{
         position: relative;
         width: calc(($width) * 0.4);
         height: $height;
